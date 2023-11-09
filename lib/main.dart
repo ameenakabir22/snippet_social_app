@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snippet/pages/splashscreen.dart';
 
 void main() => runApp(Snippet());
 
@@ -7,6 +8,9 @@ class Snippet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
